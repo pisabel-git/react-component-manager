@@ -9,12 +9,10 @@
  * It can be left blank if not needed.
  */
 
-import ComponentManager from './direflow-components/component-manager';
+import ComponentManager from "./direflow-components/component-manager";
 
-ComponentManager.then((element) => {
-
+ComponentManager.then(() => {
   /**
    * Access DOM node when it's mounted
    */
-  console.log('component-manager is mounted on the DOM', element);
 });

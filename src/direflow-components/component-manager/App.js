@@ -1,6 +1,6 @@
 import React from "react";
 
-import { ComponentManager, Tab, ComponentLink } from "./component-manager";
+import { ComponentManager, Tab, ComponentLink } from "./react-c-manager";
 
 import Component1 from "./Components/Component1";
 import Component2 from "./Components/Component2";

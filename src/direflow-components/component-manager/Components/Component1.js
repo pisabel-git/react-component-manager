@@ -1,5 +1,5 @@
 import React from "react";
-import { ComponentLink } from "../component-manager";
+import { ComponentLink } from "../react-c-manager";
 
 export default function Component1() {
   return (

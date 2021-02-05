@@ -1,17 +1,20 @@
 import React from "react";
-import { Styled } from "direflow-component";
-import styles from "./App.css";
 
-import ComponentManager, { Tab } from "./component-manager";
+import { ComponentManager, Tab, ComponentLink } from "./component-manager";
 
 import Component1 from "./Components/Component1";
 import Component2 from "./Components/Component2";
 import Component3 from "./Components/Component3";
 
-export default function App() {
+function App() {
   return (
-    <Styled styles={styles}>
-      <ComponentManager>
+    <ComponentManager>
+      <nav>
+        <ComponentLink to="/">Component 1</ComponentLink>
+        <ComponentLink to="/c2">Component 2</ComponentLink>
+        <ComponentLink to="/c3">Component 3</ComponentLink>
+      </nav>
+      <section>
         <Tab link="/">
           <Component1 />
         </Tab>
@@ -21,11 +24,11 @@ export default function App() {
         <Tab link="/c3">
           <Component3 />
         </Tab>
-      </ComponentManager>
-    </Styled>
+      </section>
+    </ComponentManager>
   );
 }
 
-App.defaultProps = {};
-
 App.propTypes = {};
+
+export default App;
